@@ -1,6 +1,6 @@
 package ar.edu.unlam.pb2;
 
-public class Villano extends Personaje implements IHechizable{
+public class Villano extends Personaje{
 	
 	
 
@@ -9,16 +9,5 @@ public class Villano extends Personaje implements IHechizable{
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public String getTipo() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Boolean hechizarGema() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }
