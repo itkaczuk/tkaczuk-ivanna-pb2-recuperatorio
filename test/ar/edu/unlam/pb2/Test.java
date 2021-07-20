@@ -9,4 +9,9 @@ public class Test {
 		;
 	}
 
+	-queUnHeroeYUnVillanoSePuedanEnfrentar (YDarGanador o alguna gilada asi)
+	-queSePuedanDevolverLosGanadoresDeFormaOrdenada (y aca probas todas las formas que te dicen)
+	-queElGanadorSeaUnVillanoYSeLanceUnaExcepcion (esta expects WORLDDDESTroyedexception.class)
+	-quePuedanTenerPoderInicialYGemasQueIncrementenSuPoder
+	-queLasGemasPuedanSerRepartidas
 }
