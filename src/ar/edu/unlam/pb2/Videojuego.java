@@ -16,7 +16,7 @@ public class Videojuego {
 	public Videojuego() {
 		super();
 		this.batallas = new HashSet<Batalla>();
-		this.villanosGanadores = new TreeSet<Villano>();
+		this.villanosGanadores = (TreeSet<Villano>) new TreeSet<Villano>().descendingSet();
 		this.heroesGanadores = new TreeSet<Heroe>();
 	}
 	

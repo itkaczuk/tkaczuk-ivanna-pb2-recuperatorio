@@ -9,5 +9,9 @@ public class Villano extends Personaje{
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public int compareTo(Personaje o) {
+		return this.nombre.compareTo(o.nombre);
+	}
 
 }

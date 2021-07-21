@@ -108,6 +108,10 @@ public class Test {
 		Villano villano2 = new Villano ("Loki", 90);
 		Heroe heroe3 = new Heroe("Iron Man", 100);
 		Villano villano3 = new Villano ("Red Skull", 250);
+		Heroe heroe4 = new Heroe("Capitan America", 1000);
+		Villano villano4 = new Villano ("Ronnan", 250);
+		Heroe heroe5 = new Heroe("Black Widow", 100);
+		Villano villano5 = new Villano ("Soldado del Invierno", 250);
 		
 		heroe.setGema(TipoDeGema.TIEMPO);
 		villano.setGema(TipoDeGema.ALMA);
@@ -127,23 +131,32 @@ public class Test {
 		Batalla batalla = new Batalla(heroe, villano);
 		Batalla batalla2 = new Batalla(heroe2, villano2);
 		Batalla batalla3 = new Batalla(heroe3, villano3);
+		Batalla batalla4 = new Batalla(heroe4, villano4);
+		Batalla batalla5 = new Batalla(heroe5, villano5);
 		
 		videojuego.agregarBatallasALaLista(batalla3);
 		videojuego.agregarBatallasALaLista(batalla2);
 		videojuego.agregarBatallasALaLista(batalla);
+		videojuego.agregarBatallasALaLista(batalla4);
+		videojuego.agregarBatallasALaLista(batalla5);
 		
 		assertEquals("Thor", batalla.darNombreGanador());
 		assertEquals("Hulk", batalla2.darNombreGanador());
 		assertEquals("Red Skull", batalla3.darNombreGanador());
+		assertEquals("Capitan America", batalla4.darNombreGanador());
+		assertEquals("Soldado del Invierno", batalla5.darNombreGanador());
 		
 		videojuego.agregarVillanosALaLista(villano3);
 		videojuego.agregarHeroesALaLista(heroe);
 		videojuego.agregarHeroesALaLista(heroe2);
+		videojuego.agregarHeroesALaLista(heroe4);
+		videojuego.agregarVillanosALaLista(villano5);
 		
-		assertEquals("Hulk", videojuego.getHeroesGanadores().first().getNombre());
+		assertEquals("Capitan America", videojuego.getHeroesGanadores().first().getNombre());
 		assertEquals("Thor", videojuego.getHeroesGanadores().last().getNombre());
-		assertEquals("Red Skull", videojuego.getVillanosGanadores().first().getNombre());
-	
+		assertEquals("Red Skull", videojuego.getVillanosGanadores().last().getNombre());
+		assertEquals("Soldado del Invierno", videojuego.getVillanosGanadores().first().getNombre());
+		
 		assertEquals("Salvaste al mundo del poderoso Thanos", videojuego.ganadorDelJuego());
 		
 	}
