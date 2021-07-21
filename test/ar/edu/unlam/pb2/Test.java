@@ -185,15 +185,14 @@ public class Test {
 		
 		videojuego.agregarVillanosALaLista(villano3);
 		videojuego.agregarHeroesALaLista(heroe);
-		videojuego.agregarHeroesALaLista(heroe2);
+		videojuego.agregarVillanosALaLista(villano2);
 		
 		assertEquals("Thor", batalla.darNombreGanador());
 		assertEquals("Loki", batalla2.darNombreGanador());
 		assertEquals("Red Skull", batalla3.darNombreGanador());
 		
 		assertNotEquals("Salvaste al mundo del poderoso Thanos", videojuego.ganadorDelJuego());
-		
-		
+			
 	}
 	
 
