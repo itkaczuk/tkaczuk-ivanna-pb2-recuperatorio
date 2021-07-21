@@ -57,6 +57,13 @@ public class Videojuego {
 		this.heroesGanadores = heroesGanadores;
 	}
 	
+	public String ganadorDelJuego() throws WorldDestroyedException {
+		if(heroesGanadores.size()>villanosGanadores.size()) {
+			return "Salvaste al mundo del poderoso Thanos";
+		} else {
+			throw new WorldDestroyedException();
+		}
+	}
 	
 	
 }

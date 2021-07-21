@@ -1,6 +1,5 @@
 package ar.edu.unlam.pb2;
 
-import ar.edu.unlam.Gol;
 
 public abstract class Personaje implements IHechizable, Comparable<Personaje>{
 
